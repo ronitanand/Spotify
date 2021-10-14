@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color:#FF0000 ;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav div{
+    /* border: 1px solid white; */
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+nav div:nth-child(1){
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: space-between;
+    width: 135px;
+
+    
+}
+
+
+nav div:nth-child(1) img{
+    width: 46px;
+    height: 46px;
+}
+
+.song-list{
+    background: black;
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 20px;
+    border-radius: 15px;
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+.ncs-heading{
+    padding: 15px 0;
+    font-size: 30px;
+    font-weight: 800;
+    word-spacing: 5px;
+}
+
+.song-list div{
+    background: white;
+    color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 3px 10px;    
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.song-list div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.song-list div p{
+    min-width: 180px;
+    max-width: 200px;
+    
+    font-size: 1.1rem;
+    
+}
+
+.song-list div i{
+    font-size: 25px;
+    cursor: pointer;
+    /* justify-self: flex-end; */
+}
+
+.current-song{
+    background: black;
+    color:white;
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+.current-song-name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+
+
+audio{
+display: block;
+width: 60%;
+margin: 0 auto;
+max-width: 600px;
+
+}
+
+@media screen and (min-width:600px) {
+    
+    .song-list div p{
+        max-width: 300px
+    }
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width:750px) {
+    
+    .song-list div p{
+        max-width: none
+    }
+
+
+
+}
+
+
+@media screen and (min-width:1155px) {
+    
+    .song-list div{
+        width: 600px;
+        margin-left: 0;
+    }
+
+    .song-list {
+        background-image: url('./images/bg.jpg');
+        background-position: center;
+    }
+    
+    body{
+        background-color: peachpuff;
+    }
+
+
+
+}
+
+
+
