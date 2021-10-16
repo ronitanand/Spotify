@@ -88,7 +88,7 @@ nav div:nth-child(1) img{
 }
 
 .song-list div p{
-    min-width: 180px;
+    
     max-width: 200px;
     
     font-size: 1.1rem;
@@ -123,7 +123,26 @@ display: block;
 width: 60%;
 margin: 0 auto;
 max-width: 600px;
+}
 
+
+.song-btns{
+text-align: center;
+margin-top: 35px;
+
+
+
+}
+
+#previous-song{
+    font-size: 27px;
+    margin-right:20px ;
+    cursor: pointer;
+}
+
+#next-song{
+    font-size: 27px;
+    cursor: pointer;
 }
 
 @media screen and (min-width:600px) {

@@ -1,5 +1,7 @@
 // const current_song_name=document.querySelector('.current-song-name')
 const current_playing=document.querySelector('.current-song')
+let Song_id=null
+let address=null
 
 
 
@@ -15,6 +17,7 @@ const play=(current_song)=>{
     let addr=''
     
     let songId=current_song.getAttribute("data-songId")
+    Song_id=songId
     switch(songId){
         case '0':{
             addr='./songs/1.mp3'
@@ -61,21 +64,34 @@ const play=(current_song)=>{
 
 
     }
+    address=addr
     let x=`
     <div class="current-song-name">${name}</div>
     
-    <audio controls autoplay>
+    <audio controls>
   <source src="${addr}" type="audio/mpeg">
 
   Your browser doesn't support HTML5 audio. Here is
      
 </audio>
+<div class="song-btns">
+<i id="previous-song" onclick="previous_song()" class="fas fa-backward"></i>
+<i id="next-song" onclick="next_song()" class="fas fa-forward"></i>
+</div>
+
+
 
     `
     current_playing.innerHTML=x
-
-    
-    
-    
-
 }
+
+
+
+function previous_song(){
+    Song_id=parseInt(Song_id)
+    console.log(Song_id)
+    
+    
+}
+
+
